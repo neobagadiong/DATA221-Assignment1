@@ -1,3 +1,13 @@
+'''
+Question 5: Circle Area Comparison with Validation
+
+Write a function that takes the radii of two circles and performs the following:
+    • Validates that both radii are positive integers.
+    • Computes the area of each circle.
+    • Returns the percentage of the larger circle’s area that can be covered by the smaller circle.
+If invalid input is provided, return a meaningful message instead of performing the calculation.
+'''
+# Start of written code using example function signature
 import math
 def circleAreaCoverage(radiusOfCircle1, radiusOfCircle2):
     if int(radiusOfCircle1) >= 0 and int(radiusOfCircle2) >= 0:
@@ -10,5 +20,6 @@ def circleAreaCoverage(radiusOfCircle1, radiusOfCircle2):
         
     else: 
         return "Please input positive integers only."
-    
-print(circleAreaCoverage(0,4))
+
+# Printout     
+print(circleAreaCoverage(3,7))

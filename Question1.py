@@ -1,9 +1,24 @@
+'''
+Question 1: Controlled Multiplication Loop
+
+Write a Python program that multiplies consecutive integers starting from 1 until the product first
+becomes greater than a given threshold value.
+Your program should:
+    • Store the threshold value in a variable.
+    • Keep track of the current multiplier.
+    • Print the final product and the integer that caused the product to exceed the threshold.
+
+'''
+
+# Example structure given 
 threshold = 1000
 currentNumber = 1
 product = 1
 
+# Start of written code/loop logic
 while product < threshold:
     currentNumber += 1
     product = product * currentNumber
 
-print (product, ' with ', currentNumber, ' as last multiplication')
+#Printout of result
+print (product, 'is the final product, exceeded threshold when multiplied last with', currentNumber)
