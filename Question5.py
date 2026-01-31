@@ -12,9 +12,9 @@ import math
 def circleAreaCoverage(radiusOfCircle1, radiusOfCircle2):
     if int(radiusOfCircle1) >= 0 and int(radiusOfCircle2) >= 0:
         if radiusOfCircle1 <= radiusOfCircle2:
-            circleCoveragePercent = ((2*math.pi*radiusOfCircle1)/(2*math.pi*radiusOfCircle2))*100 
+            circleCoveragePercent = ((radiusOfCircle1**2)/(radiusOfCircle2**2))*100 
         else:
-            circleCoveragePercent = ((2*math.pi*radiusOfCircle2)/(2*math.pi*radiusOfCircle1))*100
+            circleCoveragePercent = ((radiusOfCircle2**2)/(radiusOfCircle1**2))*100
 
         return f"The smaller circle covers {round(circleCoveragePercent)}% of the larger circle"
         
@@ -22,4 +22,4 @@ def circleAreaCoverage(radiusOfCircle1, radiusOfCircle2):
         return "Please input positive integers only."
 
 # Printout     
-print(circleAreaCoverage(3,7))
+print(circleAreaCoverage(1,2))
